@@ -1,0 +1,139 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About Us{% endblock title %}
+
+{% block main-content %}
+<style>
+    .about-header {
+        background: linear-gradient(90deg, #7b5abb 0%, #00c2cb 100%);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .about-section {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        background-color: #f7f3fc;
+        padding: 40px;
+        border-radius: 15px;
+    }
+
+    .card {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        border: none;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+        background-color: #00c2cb;
+        color: white;
+        font-size: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+    }
+
+    h2, h4, h5 {
+        color: #7b5abb;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #33303e;
+    }
+</style>
+
+
+<!-- Header Section -->
+<div class="about-header">
+    <div class="container">
+        <h1 class="display-4 fw-bold">About Our Company</h1>
+        <p class="lead mt-3">Driven by innovation, inspired by people — building a smarter future.</p>
+    </div>
+</div>
+
+<!-- About Company Section -->
+<div class="container about-section">
+    <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+            <p class="fs-5">
+                We are a public limited company headquartered in Pune, Maharashtra. Incorporated in 2018,
+                and with production commencing in 2020, we are one of the fastest-growing publicly listed companies in the region.
+                Our aim is to transform the industry landscape by integrating innovation, sustainability, and community growth.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Mission and Vision Cards -->
+<div class="container about-section">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-4 text-center h-100">
+                <div class="icon-circle">
+                    <i class="bi bi-flag"></i>
+                </div>
+                <h4 class="card-title mt-2">Our Mission</h4>
+                <p class="card-text">
+                    To embrace the right technology to delight our customers. Empowering the farmer community through our unique 'Relationship Farming' model. 
+                    We aim to respond to our customers' needs by offering high-quality products through innovative and accessible channels.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4 text-center h-100">
+                <div class="icon-circle">
+                    <i class="bi bi-eye-fill"></i>
+                </div>
+                <h4 class="card-title mt-2">Our Vision</h4>
+                <p class="card-text">
+                    To be a global leader in creating sustainable solutions for communities by fostering innovation,
+                    ensuring quality, and building long-term partnerships based on trust and mutual growth.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Choose Us Section -->
+<div class="container about-section">
+    <div class="text-center mb-4">
+        <h2>Why Choose Us?</h2>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card p-4 h-100">
+                <div class="icon-circle">
+                    <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <h5 class="card-title">Innovation</h5>
+                <p class="card-text">We adopt modern technologies and encourage creative thinking to stay ahead in the market.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4 h-100">
+                <div class="icon-circle">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <h5 class="card-title">Customer-Centric</h5>
+                <p class="card-text">We put customers at the heart of everything we do, delivering quality and satisfaction.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-4 h-100">
+                <div class="icon-circle">
+                    <i class="bi bi-globe"></i>
+                </div>
+                <h5 class="card-title">Sustainability</h5>
+                <p class="card-text">Committed to environmental and social responsibility in all our practices.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

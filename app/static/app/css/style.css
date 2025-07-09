@@ -1,0 +1,264 @@
+/* Navbar Wrapper */
+.navbar {
+    background-color: #7b5abb !important;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(94, 53, 177, 0.5); /* subtle shadow */
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    color: #d1c4e9; /* light lavender */
+}
+
+/* Navbar Right Section (Search, User, Cart, Wishlist) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search Button */
+.navbar .btn-search {
+    background-color: #9575cd; /* medium purple */
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.navbar .btn-search:hover {
+    background-color: #7e57c2; /* darker purple */
+}
+
+/* Username Dropdown */
+.navbar .dropdown-menu {
+    background-color: #f3e5f5; /* soft purple background */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 200px;
+}
+
+.navbar .dropdown-menu a.dropdown-item {
+    color: #4a148c;  /* deep purple text */
+    font-weight: 500;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Hover effect on dropdown items */
+.navbar .dropdown-menu a.dropdown-item:hover {
+    background-color: #8e24aa; /* dark purple background */
+    color: #ffffff;            /* white text */
+    text-decoration: none;
+}
+
+/* Cart Icon and Wishlist Icon */
+.navbar .cart-icon,
+.navbar .wishlist-icon {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .cart-icon:hover,
+.navbar .wishlist-icon:hover {
+    color: #d1c4e9;
+}
+
+/* Cart and Wishlist Count Badge */
+.navbar .cart-count,
+.navbar .wishlist-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: #b39ddb; /* soft purple */
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Search Input */
+.navbar input[type="text"] {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .navbar a {
+        margin: 5px 10px 5px 0;
+    }
+}
+
+
+
+
+
+/* Fixed product images size with cropping */
+.goodnessseccont img {
+    width: 100%;           /* full width of container */
+    height: 250px;         /* fixed uniform height */
+    object-fit: cover;     /* crop overflow, keep aspect ratio */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.goodnessseccont img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(110, 69, 143, 0.3);
+}
+
+/* Buttermilk Section */
+.buttermilk {
+    background: linear-gradient(to bottom, #f9f3f0, #ffffff);
+    padding: 60px 40px 30px 40px;
+    border: 1px solid #e6dcdc;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttermilk:hover {
+    box-shadow: 0 8px 24px rgba(110, 69, 143, 0.15);
+}
+
+/* Light Purple Section Background */
+.smbg {
+    background: linear-gradient(to bottom, rgba(110, 69, 143, 0.07), #ffffff);
+    padding: 50px 20px;
+}
+
+/* Light Blue Section Background */
+.curdbgpro {
+    background: linear-gradient(to bottom, rgba(10, 77, 123, 0.06), #ffffff);
+    padding: 50px 20px;
+}
+
+/* Product Heading Text */
+.mlkpro {
+    color: #4a148c;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Link Styling */
+.goodnesssec a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.goodnesssec a:hover {
+    color: #ab47bc;
+    text-decoration: underline;
+}
+
+/* Smooth Button Styling */
+.btn-custom {
+    background-color: #8e24aa;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-custom:hover {
+    background-color: #6a1b9a;
+    transform: scale(1.05);
+}
+
+/* Section Animation (Optional) */
+.section {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Spacing between product cards */
+.goodnesssec {
+    margin-bottom: 30px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .mlkpro {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .buttermilk {
+        padding: 40px 20px;
+    }
+
+    .goodnessseccont img {
+        height: 180px; /* smaller height on smaller screens */
+    }
+}
+
+footer.container-fluid {
+    background-color: #7b5abb !important; /* override Bootstrap bg-success */
+    color: #fff; /* white text for contrast */
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
